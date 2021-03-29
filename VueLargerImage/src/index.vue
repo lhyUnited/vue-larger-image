@@ -66,6 +66,7 @@ export default {
     left: 0;
     bottom: 0;
     background-color: rgba(0,0,0,.45);
+    z-index: 999999;
   }
   .vli-fullscreen img {
     position: absolute;
