@@ -66,7 +66,7 @@ yarn serve
 ### 打包
 ```json
 "scripts": {
-	"serve": "vue-cli-service serve",
+  "serve": "vue-cli-service serve",
 	"lint": "vue-cli-service lint",
 	"wc": "rm -rf ./output/wc/* && vue-cli-service build --target wc --name vue-larger-image --dest output/wc VueLargerImage/src/index.vue",
 	"lib": "rm -rf ./output/lib/* && vue-cli-service build --target lib --name vue-larger-image --dest output/lib ./VueLargerImage/index.js",
