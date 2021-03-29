@@ -15,7 +15,7 @@ Vue.use(VueLargerImage)
 
 ```html
 <vue-larger-image
-	width="200"
+  width="200"
 	bgColor="rgb(0,0,0,.2)"
 	height="auto"
 	alt="hello"
