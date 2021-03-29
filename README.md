@@ -1,7 +1,7 @@
 # vue-larger-image
 一个vue插件，view读音同vue，点一点，查看大图
-  
-
+[![iamge](https://img.shields.io/badge/github-star-brightgreen)](https://github.com/lhyUnited/vue-larger-image)
+[![image](https://img.shields.io/badge/npm-download-yellow)](https://www.npmjs.com/package/vue-larger-image)
 ## 使用
 ### 姿势一：
 
@@ -19,14 +19,14 @@ Vue.use(VueLargerImage)
   bgColor="rgb(0,0,0,.2)"
   height="auto"
   alt="hello"
-  src="https://img.yzcdn.cn/upload_files/2021/01/08/FotbYZAKI4w0iJOFd7LXGV6HLxJW.png">
+  src="https://static.tomluvjerry.cn/files/lhyUnited/2236da75b7fba3b3ff6380242166e9b3.jpg">
 </vue-larger-image>
 ```
 
 ### 姿势二：
 以**Web-component**的方式引入
 ```html
-<script src="./vue-larger-image.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue-larger-image@latest/output/wc/vue-larger-image.min.js"></script>
 ```
 在需要使用的地方：
 ```html
@@ -35,7 +35,7 @@ Vue.use(VueLargerImage)
   bgColor="rgb(0,0,0,.2)"
   height="auto"
   alt="hello"
-  src="https://img.yzcdn.cn/upload_files/2021/01/08/FotbYZAKI4w0iJOFd7LXGV6HLxJW.png">
+  src="https://static.tomluvjerry.cn/files/lhyUnited/2236da75b7fba3b3ff6380242166e9b3.jpg">
 </vue-larger-image>
 ```
 
@@ -77,3 +77,6 @@ yarn serve
 * lib: 打包成umd通用类型
 */
 ```
+
+## LICENSE
+MIT

@@ -1,6 +1,6 @@
 {
   "name": "vue-larger-image",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "main": "./VueLargerImage/index.js",
   "scripts": {
@@ -17,6 +17,7 @@
       "email": "lhy_1314@yeah.net"
     }
   ],
+  "keywords": ["vue", "image"],
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
