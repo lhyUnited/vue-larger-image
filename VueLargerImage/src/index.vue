@@ -11,13 +11,34 @@ export default {
   inheritAttrs: false,
   name: 'VueLargerImage',
   props: {
-    src: String,
-    alt: String,
-    srcset: String,
-    width: String,
-    height: String,
-    bgColor: String,
-    title: String
+    src: {
+      type: String,
+      default: 'https://static.tomluvjerry.cn/files/lhyUnited/2236da75b7fba3b3ff6380242166e9b3.jpg'
+    },
+    alt: {
+      type: String,
+      default: 'image'
+    },
+    srcset: {
+      type: String,
+      default: ''
+    },
+    width: {
+      type: String,
+      default: "200"
+    },
+    height: {
+      type: String,
+      default: "auto"
+    },
+    bgColor: {
+      type: String,
+      default: 'rgba(0,0,0,.45)'
+    },
+    title: {
+      type: String,
+      default: ''
+    }
   },
   data () {
     return {
