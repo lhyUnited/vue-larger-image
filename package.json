@@ -1,6 +1,6 @@
 {
   "name": "vue-larger-image",
-  "version": "0.1.1",
+  "version": "0.1.5",
   "private": false,
   "main": "./VueLargerImage/index.js",
   "scripts": {
@@ -8,8 +8,8 @@
     "lint": "vue-cli-service lint",
     "wc": "rm -rf ./dist/wc/* && vue-cli-service build --target wc --name vue-larger-image --dest dist/wc VueLargerImage/src/index.vue",
     "lib": "rm -rf ./dist/lib/* && vue-cli-service build --target lib --name vue-larger-image --dest dist/lib ./VueLargerImage/index.js",
-    "build": "rm -rf ./dist/* && npm run wc && npm run lib",
-    "publish": "yarn build && npm publish --registry http://registry.npmjs.org"
+    "build": "npm run wc && npm run lib",
+    "pp": "npm run wc && npm run lib && npm publish --registry http://registry.npmjs.org"
   },
   "author": "lhyUnited<lhy_1314@yeah.net>",
   "maintainers": [
