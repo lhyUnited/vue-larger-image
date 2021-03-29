@@ -6,9 +6,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
-    "wc": "rm -rf ./output/wc/* && vue-cli-service build --target wc --name vue-larger-image --dest output/wc VueLargerImage/src/index.vue",
-    "lib": "rm -rf ./output/lib/* && vue-cli-service build --target lib --name vue-larger-image --dest output/lib ./VueLargerImage/index.js",
-    "build": "rm -rf ./output/* && npm run wc && npm run lib"
+    "wc": "rm -rf ./dist/wc/* && vue-cli-service build --target wc --name vue-larger-image --dest dist/wc VueLargerImage/src/index.vue",
+    "lib": "rm -rf ./dist/lib/* && vue-cli-service build --target lib --name vue-larger-image --dest dist/lib ./VueLargerImage/index.js",
+    "build": "rm -rf ./dist/* && npm run wc && npm run lib"
   },
   "author": "lhyUnited<lhy_1314@yeah.net>",
   "maintainers": [

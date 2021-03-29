@@ -27,7 +27,7 @@ Vue.use(VueLargerImage)
 ### 姿势二：
 以**Web-component**的方式引入
 ```html
-<script src="https://cdn.jsdelivr.net/npm/vue-larger-image@latest/output/wc/vue-larger-image.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue-larger-image@latest/dist/wc/vue-larger-image.min.js"></script>
 ```
 在需要使用的地方：
 ```html
@@ -69,9 +69,9 @@ yarn serve
 "scripts": {
   "serve": "vue-cli-service serve",
   "lint": "vue-cli-service lint",
-  "wc": "rm -rf ./output/wc/* && vue-cli-service build --target wc --name vue-larger-image --dest output/wc VueLargerImage/src/index.vue",
-  "lib": "rm -rf ./output/lib/* && vue-cli-service build --target lib --name vue-larger-image --dest output/lib ./VueLargerImage/index.js",
-  "build": "rm -rf ./output/* && npm run wc && npm run lib"
+  "wc": "rm -rf ./dist/wc/* && vue-cli-service build --target wc --name vue-larger-image --dest dist/wc VueLargerImage/src/index.vue",
+  "lib": "rm -rf ./dist/lib/* && vue-cli-service build --target lib --name vue-larger-image --dest dist/lib ./VueLargerImage/index.js",
+  "build": "rm -rf ./dist/* && npm run wc && npm run lib"
 },
 /** 
 * wc: 打包成Web-component类型
