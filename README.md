@@ -19,7 +19,7 @@ Vue.use(VueLargerImage)
 	bgColor="rgb(0,0,0,.2)"
 	height="auto"
 	alt="hello"
-  src="https://img.yzcdn.cn/upload_files/2021/01/08/FotbYZAKI4w0iJOFd7LXGV6HLxJW.png">
+	src="https://img.yzcdn.cn/upload_files/2021/01/08/FotbYZAKI4w0iJOFd7LXGV6HLxJW.png">
 </vue-larger-image>
 ```
 
@@ -35,7 +35,7 @@ Vue.use(VueLargerImage)
 	bgColor="rgb(0,0,0,.2)"
 	height="auto"
 	alt="hello"
-  src="https://img.yzcdn.cn/upload_files/2021/01/08/FotbYZAKI4w0iJOFd7LXGV6HLxJW.png">
+	src="https://img.yzcdn.cn/upload_files/2021/01/08/FotbYZAKI4w0iJOFd7LXGV6HLxJW.png">
 </vue-larger-image>
 ```
 
@@ -66,7 +66,7 @@ yarn serve
 ### 打包
 ```json
 "scripts": {
-  "serve": "vue-cli-service serve",
+ 	"serve": "vue-cli-service serve",
 	"lint": "vue-cli-service lint",
 	"wc": "rm -rf ./output/wc/* && vue-cli-service build --target wc --name vue-larger-image --dest output/wc VueLargerImage/src/index.vue",
 	"lib": "rm -rf ./output/lib/* && vue-cli-service build --target lib --name vue-larger-image --dest output/lib ./VueLargerImage/index.js",
