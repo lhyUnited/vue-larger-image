@@ -65,8 +65,8 @@ export default {
     clickBigger (e) {
       e.preventDefault()
       if (e.target && e.target.nodeName.toLowerCase() === 'img') {
-        this.maxWidth = e.target.width
-        this.maxHeight = e.target.height
+        this.maxWidth = e.target.naturalWidth
+        this.maxHeight = e.target.naturalWidth
         // 禁止滚动
         document.body.style.overflow = 'hidden'
         this.open = !this.open
