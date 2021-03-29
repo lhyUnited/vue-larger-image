@@ -1,5 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
+import VueLargerImage from '../VueLargerImage'
+
+Vue.use(VueLargerImage)
 
 Vue.config.productionTip = false
 
