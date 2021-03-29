@@ -1,8 +1,9 @@
 <template>
   <div class="vli-wrapper">
-    <img :src="src" :alt="alt" :srcset="srcset" :width="width" :height="height" :title="title" @click="toggleImage">
+    <img :src="src" :alt="alt" :srcset="srcset" :width="width" :height="height" :title="title" @click="clickBigger">
     <div class="vli-fullscreen" v-if="open" :style="{ backgroundColor: bgColor }">
-      <img :src="src" :alt="alt" :srcset="srcset" :title="title" @click="toggleImage">
+      <img ref="vliImage" :src="src" :alt="alt" :srcset="srcset" :title="title"
+        :width="maxWidth" :height="maxHeight" @click="clickSmaller">
     </div>
   </div>
 </template>
@@ -13,7 +14,7 @@ export default {
   props: {
     src: {
       type: String,
-      default: 'https://static.tomluvjerry.cn/files/lhyUnited/2236da75b7fba3b3ff6380242166e9b3.jpg'
+      default: 'https://i.loli.net/2021/03/29/3BtxSQA9FjCysPr.png'
     },
     alt: {
       type: String,
@@ -25,7 +26,7 @@ export default {
     },
     width: {
       type: String,
-      default: "200"
+      default: "auto"
     },
     height: {
       type: String,
@@ -42,13 +43,40 @@ export default {
   },
   data () {
     return {
-      open: false
+      open: false,
+      maxWidth: 0,
+      maxHeight: 0
+    }
+  },
+  watch: {
+    open: function() {
+      if (open) {
+        this.$nextTick(() => {
+          // 如果图片大于屏幕宽高，取消position: absolute定位
+          if (this.maxWidth > window.screen.width || this.maxHeight > window.screen.height) {
+          this.$refs.vliImage.classList.add('vli-img-reset')
+        }
+        })
+      }
     }
   },
   methods: {
-    toggleImage (e) {
+    clickBigger (e) {
+      e.preventDefault()
+      if (e.target && e.target.nodeName.toLowerCase() === 'img') {
+        this.maxWidth = e.target.width
+        this.maxHeight = e.target.height
+        console.log(document.body.clientWidth)
+        console.log(document.body.clientHeight)
+        // 禁止滚动
+        document.body.style.overflow = 'hidden'
+        this.open = !this.open
+      }
+    },
+    clickSmaller (e) {
       e.preventDefault()
       if (e.target.nodeName.toLowerCase() === 'img') {
+        document.body.style.overflow = 'auto'
         this.open = !this.open
       }
     },
@@ -66,16 +94,21 @@ export default {
     left: 0;
     bottom: 0;
     background-color: rgba(0,0,0,.45);
+    overflow: auto;
+    text-align: center;
     z-index: 999999;
   }
   .vli-fullscreen img {
     position: absolute;
-    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     margin: auto;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    display: block;
     cursor: zoom-out;
-    max-width: 100%;
+  }
+  img.vli-img-reset {
+    position: static;
   }
 </style>
