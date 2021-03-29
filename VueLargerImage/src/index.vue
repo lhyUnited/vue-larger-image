@@ -1,8 +1,8 @@
 <template>
   <div class="vli-wrapper">
-    <img :src="src" :alt="alt" :srcset="srcset" :width="width" :height="height" @click="toggleImage">
+    <img :src="src" :alt="alt" :srcset="srcset" :width="width" :height="height" :title="title" @click="toggleImage">
     <div class="vli-fullscreen" v-if="open" :style="{ backgroundColor: bgColor }">
-      <img :src="src" :alt="alt" :srcset="srcset" @click="toggleImage">
+      <img :src="src" :alt="alt" :srcset="srcset" :title="title" @click="toggleImage">
     </div>
   </div>
 </template>
@@ -16,7 +16,8 @@ export default {
     srcset: String,
     width: String,
     height: String,
-    bgColor: String
+    bgColor: String,
+    title: String
   },
   data () {
     return {
