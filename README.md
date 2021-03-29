@@ -1,5 +1,6 @@
 # vue-larger-image
 一个vue插件，view读音同vue，点一点，查看大图
+
 [![iamge](https://img.shields.io/badge/github-star-brightgreen)](https://github.com/lhyUnited/vue-larger-image)
 [![image](https://img.shields.io/badge/npm-download-yellow)](https://www.npmjs.com/package/vue-larger-image)
 ## 使用
