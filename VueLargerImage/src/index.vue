@@ -50,15 +50,16 @@ export default {
   },
   watch: {
     open: function() {
-      if (open) {
+      if (this.open) {
         this.$nextTick(() => {
           // 如果图片大于屏幕宽高，取消position: absolute定位
           if (this.maxWidth > window.screen.width || this.maxHeight > window.screen.height) {
-          this.$refs.vliImage.classList.add('vli-img-reset')
-        }
+            this.$refs.vliImage.classList.add('vli-img-reset')
+          }
         })
       }
-    }
+    },
+    immediate: false
   },
   methods: {
     clickBigger (e) {
@@ -66,8 +67,6 @@ export default {
       if (e.target && e.target.nodeName.toLowerCase() === 'img') {
         this.maxWidth = e.target.width
         this.maxHeight = e.target.height
-        console.log(document.body.clientWidth)
-        console.log(document.body.clientHeight)
         // 禁止滚动
         document.body.style.overflow = 'hidden'
         this.open = !this.open
