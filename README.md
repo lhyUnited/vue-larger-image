@@ -71,11 +71,13 @@ yarn serve
   "lint": "vue-cli-service lint",
   "wc": "rm -rf ./dist/wc/* && vue-cli-service build --target wc --name vue-larger-image --dest dist/wc VueLargerImage/src/index.vue",
   "lib": "rm -rf ./dist/lib/* && vue-cli-service build --target lib --name vue-larger-image --dest dist/lib ./VueLargerImage/index.js",
-  "build": "rm -rf ./dist/* && npm run wc && npm run lib"
+  "build": "rm -rf ./dist/* && npm run wc && npm run lib",
+  "pp": "npm run wc && npm run lib && npm publish --registry http://registry.npmjs.org"
 },
 /** 
 * wc: 打包成Web-component类型
 * lib: 打包成umd通用类型
+* pp: prepublish
 */
 ```
 

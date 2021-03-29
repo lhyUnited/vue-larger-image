@@ -13,7 +13,7 @@ module.exports = {
     config.module
       .rule('js')
       .include
-        .add('/packages')
+        .add('/VueLargerImage')
         .end()
       .use('babel')
         .loader('babel-loader')
