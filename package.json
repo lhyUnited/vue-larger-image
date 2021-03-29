@@ -5,9 +5,18 @@
   "main": "./VueLargerImage/index.js",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "wc": "rm -rf ./output/wc/* && vue-cli-service build --target wc --name vue-larger-image --dest output/wc VueLargerImage/src/index.vue",
+    "lib": "rm -rf ./output/lib/* && vue-cli-service build --target lib --name vue-larger-image --dest output/lib ./VueLargerImage/index.js",
+    "build": "rm -rf ./output/* && npm run wc && npm run lib"
   },
+  "author": "lhyUnited<lhy_1314@yeah.net>",
+  "maintainers": [
+    {
+      "name": "lhyUnited",
+      "email": "lhy_1314@yeah.net"
+    }
+  ],
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
@@ -39,5 +48,6 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "license": "MIT"
 }
