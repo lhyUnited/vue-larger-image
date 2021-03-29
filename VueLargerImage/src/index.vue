@@ -14,7 +14,7 @@ export default {
   props: {
     src: {
       type: String,
-      default: 'https://i.loli.net/2021/03/29/3BtxSQA9FjCysPr.png'
+      default: 'https://i.loli.net/2021/03/29/Hcvo57YUtpGmwdq.jpg'
     },
     alt: {
       type: String,
@@ -66,7 +66,7 @@ export default {
       e.preventDefault()
       if (e.target && e.target.nodeName.toLowerCase() === 'img') {
         this.maxWidth = e.target.naturalWidth
-        this.maxHeight = e.target.naturalWidth
+        this.maxHeight = e.target.naturalHeight
         // 禁止滚动
         document.body.style.overflow = 'hidden'
         this.open = !this.open

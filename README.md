@@ -45,7 +45,7 @@ Vue.use(VueLargerImage)
 ### 可选参数
 | options | 类型 | 默认值 | 说明|
 |--|--|--|--|
-| src | String | https://i.loli.net/2021/03/29/3BtxSQA9FjCysPr.png | 不能使用相对路径 |
+| src | String | https://i.loli.net/2021/03/29/Hcvo57YUtpGmwdq.jpg | 不能使用相对路径 |
 | width | String | auto |
 | height | String | auto |
 |bgColor|String|rgba(0,0,0,.45)|遮罩层的背景颜色 |
