@@ -15,10 +15,10 @@ Vue.use(VueLargerImage)
 
 ```html
 <vue-larger-image
-	width="200"
-	bgColor="rgb(0,0,0,.2)"
-	height="auto"
-	alt="hello"
+  width="200"
+  bgColor="rgb(0,0,0,.2)"
+  height="auto"
+  alt="hello"
   src="https://img.yzcdn.cn/upload_files/2021/01/08/FotbYZAKI4w0iJOFd7LXGV6HLxJW.png">
 </vue-larger-image>
 ```
@@ -31,10 +31,10 @@ Vue.use(VueLargerImage)
 在需要使用的地方：
 ```html
 <vue-larger-image
-	width="200"
-	bgColor="rgb(0,0,0,.2)"
-	height="auto"
-	alt="hello"
+  width="200"
+  bgColor="rgb(0,0,0,.2)"
+  height="auto"
+  alt="hello"
   src="https://img.yzcdn.cn/upload_files/2021/01/08/FotbYZAKI4w0iJOFd7LXGV6HLxJW.png">
 </vue-larger-image>
 ```
@@ -67,10 +67,10 @@ yarn serve
 ```json
 "scripts": {
   "serve": "vue-cli-service serve",
-	"lint": "vue-cli-service lint",
-	"wc": "rm -rf ./output/wc/* && vue-cli-service build --target wc --name vue-larger-image --dest output/wc VueLargerImage/src/index.vue",
-	"lib": "rm -rf ./output/lib/* && vue-cli-service build --target lib --name vue-larger-image --dest output/lib ./VueLargerImage/index.js",
-	"build": "rm -rf ./output/* && npm run wc && npm run lib"
+  "lint": "vue-cli-service lint",
+  "wc": "rm -rf ./output/wc/* && vue-cli-service build --target wc --name vue-larger-image --dest output/wc VueLargerImage/src/index.vue",
+  "lib": "rm -rf ./output/lib/* && vue-cli-service build --target lib --name vue-larger-image --dest output/lib ./VueLargerImage/index.js",
+  "build": "rm -rf ./output/* && npm run wc && npm run lib"
 },
 /** 
 * wc: 打包成Web-component类型
