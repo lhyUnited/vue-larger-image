@@ -6,6 +6,14 @@
 ## 使用
 ### 姿势一：
 
+```shell
+# with npm
+npm i vue-larger-image
+
+# with yarn
+yarn add vue-larger-iamge
+```
+
 在`main.js`中注册
 ```js
 import VueLargerImage from 'vue-larger-image'
