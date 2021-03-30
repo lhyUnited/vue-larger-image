@@ -1,11 +1,10 @@
 # vue-larger-image
-[English](https://github.com/lhyUnited/vue-larger-image/blob/master/README.md) | [中文简体](https://github.com/lhyUnited/vue-larger-image/tree/master/docs/readme.zh.md)
-A plugin based on Vuejs, which provides the function of viewing larger image. As view sounds like Vue, so we call it vue-larger-iamge
+一个vue插件，view读音同vue，点一点，查看大图
 
 [![iamge](https://img.shields.io/badge/github-star-brightgreen)](https://github.com/lhyUnited/vue-larger-image)
 [![image](https://img.shields.io/badge/npm-download-yellow)](https://www.npmjs.com/package/vue-larger-image)
-## Usage
-### Option one：
+## 使用
+### 姿势一：
 
 ```shell
 # with npm
@@ -15,13 +14,13 @@ npm i vue-larger-image
 yarn add vue-larger-iamge
 ```
 
-Register in `main.js`
+在`main.js`中注册
 ```js
 import VueLargerImage from 'vue-larger-image'
 Vue.use(VueLargerImage)
 ```
 
-In the component you wish to deploy
+在要使用的组件内
 
 ```html
 <vue-larger-image
@@ -33,12 +32,12 @@ In the component you wish to deploy
 </vue-larger-image>
 ```
 
-### Option two：
-import the plugin as **Web-component**
+### 姿势二：
+以**Web-component**的方式引入
 ```html
 <script src="https://cdn.jsdelivr.net/npm/vue-larger-image@latest/dist/wc/vue-larger-image.min.js"></script>
 ```
-Some place where you wish to deploy：
+在需要使用的地方：
 ```html
 <vue-larger-image
   width="200"
@@ -49,31 +48,31 @@ Some place where you wish to deploy：
 </vue-larger-image>
 ```
 
-More about Web-component，please check: [https://cli.vuejs.org/zh/guide/build-targets.html#web-components-%E7%BB%84%E4%BB%B6](https://cli.vuejs.org/zh/guide/build-targets.html#web-components-%E7%BB%84%E4%BB%B6)
+关于Web-component，请查看[https://cli.vuejs.org/zh/guide/build-targets.html#web-components-%E7%BB%84%E4%BB%B6](https://cli.vuejs.org/zh/guide/build-targets.html#web-components-%E7%BB%84%E4%BB%B6)
 
-### Props
-| options | type | default | additional |
+### 可选参数
+| options | 类型 | 默认值 | 说明|
 |--|--|--|--|
-| src | String | https://i.loli.net/2021/03/29/Hcvo57YUtpGmwdq.jpg | **DO NOT** USE RELATIVE PATH |
-| width | String | auto | width of image |
-| height | String | auto | height of image |
-|bgColor|String|rgba(0,0,0,.45)| the background-color of mask |
-| alt | String | image | something to show when the image crushed |
+| src | String | https://i.loli.net/2021/03/29/Hcvo57YUtpGmwdq.jpg | 不能使用相对路径 |
+| width | String | auto | 小图的宽 |
+| height | String | auto | 小图的高 |
+|bgColor|String|rgba(0,0,0,.45)|遮罩层的背景颜色 |
+| alt | String | image |图片加载出错显示的文字|
 | title | String |''|
 |srcset| String | '' |
 
-## Develope
-### Clone this repo
+## 开发
+### 拉取本仓库代码
 ```shell
 git clone git@github.com:lhyUnited/vue-larger-image.git
 ```
 
-### Start the server
+### 本地起服务
 ```shell
 yarn serve
 ```
 
-### Build
+### 打包
 ```json
 "scripts": {
   "serve": "vue-cli-service serve",
@@ -84,8 +83,8 @@ yarn serve
   "pp": "npm run wc && npm run lib && npm publish --registry http://registry.npmjs.org"
 },
 /** 
-* wc: expected output as Web-component
-* lib: expected output as umd
+* wc: 打包成Web-component类型
+* lib: 打包成umd通用类型
 * pp: prepublish
 */
 ```
