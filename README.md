@@ -54,8 +54,8 @@ Vue.use(VueLargerImage)
 | options | 类型 | 默认值 | 说明|
 |--|--|--|--|
 | src | String | https://i.loli.net/2021/03/29/Hcvo57YUtpGmwdq.jpg | 不能使用相对路径 |
-| width | String | auto |
-| height | String | auto |
+| width | String | auto | 小图的宽 |
+| height | String | auto | 小图的高 |
 |bgColor|String|rgba(0,0,0,.45)|遮罩层的背景颜色 |
 | alt | String | image |图片加载出错显示的文字|
 | title | String |''|
