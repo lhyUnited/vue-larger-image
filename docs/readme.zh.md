@@ -1,4 +1,7 @@
 # vue-larger-image
+[English](https://github.com/lhyUnited/vue-larger-image/blob/master/README.md) | [中文简体](https://github.com/lhyUnited/vue-larger-image/tree/master/docs/readme.zh.md)
+
+
 一个vue插件，view读音同vue，点一点，查看大图
 
 [![iamge](https://img.shields.io/badge/github-star-brightgreen)](https://github.com/lhyUnited/vue-larger-image)

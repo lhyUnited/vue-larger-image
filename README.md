@@ -1,5 +1,7 @@
 # vue-larger-image
 [English](https://github.com/lhyUnited/vue-larger-image/blob/master/README.md) | [中文简体](https://github.com/lhyUnited/vue-larger-image/tree/master/docs/readme.zh.md)
+
+
 A plugin based on Vuejs, which provides the function of viewing larger image. As view sounds like Vue, so we call it vue-larger-iamge
 
 [![iamge](https://img.shields.io/badge/github-star-brightgreen)](https://github.com/lhyUnited/vue-larger-image)
