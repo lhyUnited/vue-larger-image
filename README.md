@@ -86,8 +86,8 @@ yarn serve
   "pp": "npm run wc && npm run lib && npm publish --registry http://registry.npmjs.org"
 },
 /** 
-* wc: expected output as Web-component
-* lib: expected output as umd
+* wc: output expected as Web-component
+* lib: output expected as umd
 * pp: prepublish
 */
 ```
