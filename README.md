@@ -64,7 +64,7 @@ More about Web-component，please check: [https://cli.vuejs.org/zh/guide/build-t
 | title | String |''|
 |srcset| String | '' |
 
-## Develope
+## Develop
 ### Clone this repo
 ```shell
 git clone git@github.com:lhyUnited/vue-larger-image.git
